@@ -20,3 +20,7 @@ const countLetters = function(myString) {
   return myCountObject;
 };
 console.log(countLetters("lighthouse in the house"));
+
+const result = countLetters('lighthouse in the house');
+assertEqual(result['l'], 1);
+assertEqual(result['i'], 2);
