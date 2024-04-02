@@ -19,10 +19,10 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const takeUntil = function(array, callback) {
   let resultArr = [];
-  for (let item in array) {
-    // console.log(array[item]);
-    if (callback(array[item]) !== true) {
-      resultArr.push(array[item]);
+  for (let item of array) {
+    // console.log(item);
+    if (callback(item) !== true) {
+      resultArr.push(item);
     } else {
       return resultArr;
     }
@@ -39,4 +39,4 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
-assertArraysEqual(results2, ["I've", "been", "to", "Hollywood", ","]);
+assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]);
