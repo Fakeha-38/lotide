@@ -1,6 +1,3 @@
-const assertEqual = require("./assertEqual");
-const eqArrays = require("./eqArrays");
-
 const middle = function (arr) {
   let middArray = [];
   if (arr.length === 0 || arr.length === 1 || arr.length === 2) {
