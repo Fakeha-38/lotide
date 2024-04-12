@@ -3,5 +3,5 @@
 const assertEqual = require("../assertEqual");
 const head = require("../head");
 
-assertEqual(head(["some string"]), 5);
+assertEqual(head([5, 87, [3535], "some string"]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
