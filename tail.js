@@ -1,8 +1,6 @@
 let tailArr = [];
 const tail = function(arr) {
-  for (let i = 1; i < arr.length; i++) {
-    tailArr.push(arr[i]);
-  }
+  tailArr = arr.slice(1);
   return tailArr;
 };
 
