@@ -1,15 +1,15 @@
 {
-  "name": "lotide-testing",
+  "name": "@fakeha38/lotide",
   "version": "1.0.0",
-  "description": "testing for lotide project",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha"
   },
-  "author": "Fakeha",
+  "author": "Fakeha Iftikhar",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.4.1",
