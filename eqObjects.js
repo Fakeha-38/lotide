@@ -7,17 +7,18 @@ const assertEqual = function (actual, expected) {
 };
 const eqObjects = function(obj1, obj2) {
   let setResult = true;
-  for (let key in obj1) {
-    if (obj1[key] !== obj2[key]) {
-      setResult = false;
-      return setResult;
+  if (Object.keys(obj1).length === Object.keys(obj2).length) {
+    for (let key in obj1) {
+      if (Array.isArray(obj1[key])) {
+        setResult = eqArrays(obj1[key], obj2[key]);
+      } else if (obj1[key] !== obj2[key]) {
+        setResult = false;
+        return setResult;
+      }
     }
-  }
-  for (let key in obj2) {
-    if (obj1[key] !== obj2[key]) {
-      setResult = false;
-      return setResult;
-    }
+  } else {
+    setResult = false;
+    return setResult;
   }
   return setResult;
 };
