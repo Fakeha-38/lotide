@@ -5,6 +5,7 @@ const assertEqual = function (actual, expected) {
     console.log(`❌❌❌ Assertion failed: ${actual} !== ${expected}`);
   }
 };
+const eqArrays = require('./eqArrays');
 const eqObjects = function(obj1, obj2) {
   let setResult = true;
   if (Object.keys(obj1).length === Object.keys(obj2).length) {
