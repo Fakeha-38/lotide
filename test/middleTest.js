@@ -3,7 +3,7 @@
 const assert = require('chai').assert;
 const middle   = require('../middle');
 
-describe("#tail", () => {
+describe("#middle", () => {
   it("returns [2, \'mid of array\', 54] for ['mid of array']", () => {
     assert.deepEqual(middle([2, 'mid of array', 54]), ['mid of array']);
   });
