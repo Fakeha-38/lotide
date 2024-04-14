@@ -26,7 +26,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- `head(...)`: returns the head (first element) of na array
+- `head(...)`: returns the head (first element) of an array
 - `tail(...)`: returns the tail (all elements except the head) of an array
 - `middle(...)`: returns an array with middle part of our original array
 - `eqArrays(...)`: returns true or false by comparing two input arrays
